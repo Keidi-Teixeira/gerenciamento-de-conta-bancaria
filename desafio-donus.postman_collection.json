@@ -1,0 +1,133 @@
+{
+  "info": {
+    "_postman_id": "24130094-68264e7a-301f-4ad0-acae-540ca20840b2",
+    "name": "desafio-donus",
+    "schema": "https://www.getpostman.com/collections/0f2dd231a95130aee116"
+  },
+  "item": [
+    {
+      "name": "Register client",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"cpf\": \"567.594.690-03\",\r\n    \"fullname\": \"asdasd asdasd\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{host}}/client",
+          "host": [
+            "{{host}}"
+          ],
+          "path": [
+            "client"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Deposit",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"clientId\": \"56759469003\",\r\n    \"value\": \"10\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{host}}/client/deposit",
+          "host": [
+            "{{host}}"
+          ],
+          "path": [
+            "client",
+            "deposit"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Transfer",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"from\": \"56759469003\",\r\n    \"to\": \"46786232051\",\r\n    \"value\": \"1\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{host}}/client/transfer",
+          "host": [
+            "{{host}}"
+          ],
+          "path": [
+            "client",
+            "transfer"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get client information",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{host}}/client/567.594.690-03",
+          "host": [
+            "{{host}}"
+          ],
+          "path": [
+            "client",
+            "567.594.690-03"
+          ]
+        }
+      },
+      "response": []
+    }
+  ],
+  "event": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "type": "text/javascript",
+        "exec": [
+          ""
+        ]
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "type": "text/javascript",
+        "exec": [
+          ""
+        ]
+      }
+    }
+  ],
+  "variable": [
+    {
+      "key": "host",
+      "value": "http://localhost:8090"
+    }
+  ]
+}
