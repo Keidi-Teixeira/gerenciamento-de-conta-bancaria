@@ -41,3 +41,11 @@ Body: { "clientId": <string>, "value": <integer> }
 Descrição: Transfere um valor do cliente from para o to
 Method: POST
 Body: { "from": <string>, "to": <string>, "value": <integer> }
+
+<h2><b>Organização do projeto</b></h2>
+
+core: Todas as regras de negócio da aplicação estão centralizadas nesta aplicação;
+persistence: Implementação das operações de persistência definidas no pacote ports da aplicação core;
+spring-rest: Implementação da API REST para manipulação das operações referents ao cliente. Também pode ser considerado como uma entrada para a execução das regras de negócio da aplicação.
+
+A aplicação core possui uma suite de testes unitários para as regras de negócio, assim como a spring-rest para testar a camada WEB. Uma rotina foi configurada no Github Actions para verificar se a aplicação está sendo construidade adequadamente e se os testes estão sendo aceitos.
