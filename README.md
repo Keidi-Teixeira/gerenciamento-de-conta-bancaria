@@ -21,6 +21,8 @@ basta digitar as seguintes informações na tela do console para acessar o banco
 JDBC URL: jdbc:h2:mem:donus
 Password: password
 
+<h2><b>ApiRest</b></h2>
+
 O arquivo desafio-donus.postman_collection localizado no diretório raiz do projeto pode ser importado para o Postman para executar operações da API REST.
 
 /client
