@@ -1,13 +1,6 @@
-# gerenciamento-de-conta-bancaria
+# Gerenciamento de conta báncaria
 
-Desafio de Backend
-Seu objetivo é criar uma API REST com algumas funções essenciais relacionadas ao gerenciamento de contas bancárias em uma das linguagem: Java, Kotlin, Python, Node.js, .NET
-
-Para abrir uma conta é necessário apenas o nome completo e CPF da pessoa, mas só é permitido uma conta por pessoa;
-Com essa conta é possível realizar transferências para outras contas e depositar;
-Não aceitamos valores negativos nas contas;
-Por questão de segurança cada transação de depósito não pode ser maior do que R$2.000;
-As transferências entre contas são gratuitas e ilimitadas;
+Desafio de backend de um processo seletivo o objetivo era criar uma API REST com algumas funções essenciais relacionadas ao gerenciamento de conta bancária.
 
 <h2><b>Este é um projeto de Java com Spring Boot, ApiRest e foi utilizado o banco de dados "in memory" H2.</b></h2>
 
