@@ -1,9 +1,3 @@
-{
-  "info": {
-    "_postman_id": "24130094-68264e7a-301f-4ad0-acae-540ca20840b2",
-    "name": "desafio-donus",
-    "schema": "https://www.getpostman.com/collections/0f2dd231a95130aee116"
-  },
   "item": [
     {
       "name": "Register client",
